@@ -1,7 +1,4 @@
 import 'dart:async';
-
-import 'package:flutter/animation.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:quiz_app/model/question_model.dart';
@@ -106,7 +103,7 @@ class QuizController extends GetxController{
   int get countOfCorrectAnswers => _countOfCorrectAnswers;
 
   //map for check if the question has been answered
-  final Map<int, bool> _questionIsAnswerd = {};
+  final Map<int, bool> _questionIsAnswer = {};
 
 
   //page view controller
@@ -152,14 +149,14 @@ class QuizController extends GetxController{
       _countOfCorrectAnswers++;
     }
     stopTimer();
-    _questionIsAnswerd.update(questionModel.id, (value) => true);
+    _questionIsAnswer.update(questionModel.id, (value) => true);
     Future.delayed(const Duration(milliseconds: 500)).then((value) => nextQuestion());
     update();
   }
 
   //check if the question has been answered
   bool checkIsQuestionAnswered(int quesId) {
-    return _questionIsAnswerd.entries
+    return _questionIsAnswer.entries
         .firstWhere((element) => element.key == quesId)
         .value;
   }
@@ -185,7 +182,7 @@ class QuizController extends GetxController{
   //called when start again quiz
   void resetAnswer() {
     for (var element in _questionsList) {
-      _questionIsAnswerd.addAll({element.id: false});
+      _questionIsAnswer.addAll({element.id: false});
     }
     update();
   }
