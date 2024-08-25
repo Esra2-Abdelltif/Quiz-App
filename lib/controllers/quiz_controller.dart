@@ -2,6 +2,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:quiz_app/model/question_model.dart';
+import 'package:quiz_app/view/screen/result_screen.dart';
+import 'package:quiz_app/view/screen/welcome_screen.dart';
 
 class QuizController extends GetxController{
   String name = '';
@@ -167,7 +169,7 @@ class QuizController extends GetxController{
     }
 
     if (pageController.page == _questionsList.length - 1) {
-      // Get.offAndToNamed(ResultScreen.routeName);
+       Get.offAndToNamed(ResultScreen.routeName);
     } else {
       _isPressed = false;
       pageController.nextPage(
@@ -234,6 +236,6 @@ class QuizController extends GetxController{
     _countOfCorrectAnswers = 0;
     resetAnswer();
     _selectAnswer = null;
-    // Get.offAllNamed(WelcomeScreen.routeName);
+    Get.offAllNamed(WelcomeScreen.routeName);
   }
 }
