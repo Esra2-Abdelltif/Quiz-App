@@ -1,16 +1,21 @@
-# quiz_app
+# Quiz App
 
-A new Flutter project.
+Quiz App TimeController&GetX [MVC pattern] 👨🏻‍💻
 
-## Getting Started
+Quiz app is open-source Quiz app for Android & ios. It is built with Dart on top of Google's Flutter Framework.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+# 🛠 Dependencies
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+  ``` 
+  get: ^4.6.6
+  ```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# 🚀 Download the app on Google Drive : [https://drive.google.com/file/d/1VZ9468Scm7EAk85ym4B9m9K6uIh3KVPn/view?usp=sharing](https://drive.google.com/file/d/1VZ9468Scm7EAk85ym4B9m9K6uIh3KVPn/view?usp=sharing)
+
+
+
+# 🎥 Video
+
+https://github.com/user-attachments/assets/aef704f5-04ba-4b6b-8eb0-c2ff07555c9b
+
