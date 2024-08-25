@@ -6,7 +6,6 @@ import 'package:quiz_app/view/widget/custom_button.dart';
 import 'package:quiz_app/view/widget/progress_timer.dart';
 import 'package:quiz_app/view/widget/question_card.dart';
 
-
 class QuizScreen extends StatelessWidget {
   const QuizScreen({Key? key}) : super(key: key);
   static const routeName = '/quiz_screen';
@@ -14,20 +13,11 @@ class QuizScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // extendBodyBehindAppBar: true,
-      // appBar: AppBar(
-      //   elevation: 0,
-      //   backgroundColor: Colors.transparent,
-      // ),
       body: Stack(
         alignment: Alignment.topCenter,
         children: [
           Container(
-            decoration: const BoxDecoration(
-              // image: DecorationImage(
-              //     image: AssetImage('assets/images/here.jpg'),
-              //     fit: BoxFit.cover),
-                color: Colors.black87),
+            decoration: const BoxDecoration(color: Colors.black87),
           ),
           SafeArea(
             child: GetBuilder<QuizController>(
@@ -78,7 +68,7 @@ class QuizScreen extends StatelessWidget {
                     height: 15,
                   ),
                   SizedBox(
-                    height: 450,
+                    height: 470,
                     child: PageView.builder(
                       scrollDirection: Axis.horizontal,
                       physics: const NeverScrollableScrollPhysics(),
@@ -92,9 +82,11 @@ class QuizScreen extends StatelessWidget {
                   const SizedBox(
                     height: 20,
                   ),
-                  Image.asset(
-                    "assets/images/shf.png",
-                    height: 250,
+                  Expanded(
+                    child: Image.asset(
+                      "assets/images/shf.png",
+                      height: 250,
+                    ),
                   ),
                 ],
               ),

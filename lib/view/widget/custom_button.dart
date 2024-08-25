@@ -7,7 +7,7 @@ class CustomButton extends StatelessWidget {
     Key? key,
     required this.onPressed,
     required this.text,
-    this.width=140,
+    this.width=160,
   }) : super(key: key);
   final Function() onPressed;
   final String text;
