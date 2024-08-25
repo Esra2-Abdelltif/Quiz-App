@@ -11,7 +11,7 @@ Quiz app is open-source Quiz app for Android & ios. It is built with Dart on top
   get: ^4.6.6
   ```
 
-# 🚀 Download the app on Google Drive : [https://drive.google.com/file/d/1VZ9468Scm7EAk85ym4B9m9K6uIh3KVPn/view?usp=sharing](https://drive.google.com/file/d/1VZ9468Scm7EAk85ym4B9m9K6uIh3KVPn/view?usp=sharing)
+# 🚀 Download the app on Google Drive : [apk](https://drive.google.com/file/d/1VZ9468Scm7EAk85ym4B9m9K6uIh3KVPn/view?usp=sharing)
 
 
 
